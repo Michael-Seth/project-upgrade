@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const DarkModeToggle: React.FC = () => {
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
+    return localStorage.getItem("theme") === "dark" || !localStorage.getItem("theme");
   });
 
   useEffect(() => {
@@ -22,21 +23,28 @@ const DarkModeToggle: React.FC = () => {
   return (
     <label
       htmlFor="DarkModeToggle"
-      className="relative inline-block h-8 w-10 cursor-pointer [-webkit-tap-highlight-color:_transparent]"
+      className="relative inline-flex items-center cursor-pointer"
     >
       <input
         type="checkbox"
         id="DarkModeToggle"
-        className="peer sr-only"
+        className="sr-only"
         checked={darkMode}
         onChange={toggleDarkMode}
       />
-
-      <span className="absolute inset-0 m-auto h-1 rounded-full bg-gray-300"></span>
-
-      <span className="absolute inset-y-0 start-0 m-auto size-5 rounded-full bg-slate-800 transition-all peer-checked:start-6 peer-checked:[&_>_*]:scale-0">
-        <span className="absolute inset-0 m-auto size-3 rounded-full bg-gray-200 transition">
+      <span className="w-12 h-8 bg-gray-300 rounded-full inline-flex items-center">
+        <span
+          className={`w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center absolute transform transition-transform ${
+            darkMode ? "translate-x-4" : "translate-x-0"
+          }`}
+        >
+          {darkMode ? <FaMoon className="text-white" /> : <FaSun className="text-yellow-500" />}
         </span>
+        <span
+          className={`w-12 h-8 bg-gray-300 rounded-full flex items-center justify-center ${
+            darkMode ? "bg-gray-800" : "bg-gray-300"
+          }`}
+        />
       </span>
     </label>
   );

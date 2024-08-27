@@ -36,8 +36,11 @@ function Navbar() {
             </button>
 
             <div className="flex flex-row items-center">
-              
-              <div className="sm:hidden">{toggleNavbar && <DarkModeToggle />}</div>
+              {toggleNavbar && (
+                <div className="block sm:hidden">
+                  {isElementVisible && <DarkModeToggle />}
+                </div>
+              )}
 
               <button
                 onClick={toggle}
@@ -190,7 +193,6 @@ function Navbar() {
 
             <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
               {toggleNavbar && <DarkModeToggle />}
-              
             </div>
           </nav>
         </div>
