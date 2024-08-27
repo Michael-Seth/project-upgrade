@@ -6,8 +6,8 @@ import zonely1 from "../assets/projects/Zonely.png";
 //import zonely2 from "../assets/projects/Zonely2.png";
 import stn1 from "../assets/projects/Ship2Naija.png";
 import compressor1 from "../assets/projects/compressor.png";
-import mainImg from "../assets/Bitselahcover.png";
-// import mainImg from "../assets/profileIcon.png";
+//import mainImg from "../assets/Bitselahcover.png";
+import mainImg from "../assets/profileIcon.png";
 import ShimmerButton from "../external/components/magicui/shimmer-button"
 import TypingAnimation from "../external/components/magicui/typing-animation";
 
@@ -32,9 +32,8 @@ function Hero() {
                 <TypingAnimation className="text-2xl font-medium tracking-tight text-black dark:text-white sm:text-4xl"
                   text = "I am a Full stack software engineer"
                 />
-                <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600 dark:text-slate-300">
-                  Less talk, more code - Unleashing the power of programming to
-                  transform ideas into robust solutions
+                <p className="max-w-xl mt-10 text-center sm:text-justify text-base tracking-tight text-gray-600 dark:text-slate-300">
+                  Less talk, more code <br /> Getting the job done is my priority.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">

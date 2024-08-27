@@ -63,7 +63,7 @@ function ScrollProfile() {
                         <LuExternalLink className="inline" />
                       </span>
                       <span className="dark:text-slate-400 mt-2 text-xs">
-                        Jan 2024 - Present
+                        Jan 2023 - Present
                       </span>
                     </a>
                     <div className="w-full h-1 mt-2 mb-6 bg-slate-800 dark:bg-white"></div>

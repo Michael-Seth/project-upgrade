@@ -19,7 +19,19 @@ import "swiper/css/navigation";
 
 import "./ProjectSlide.css";
 import { Autoplay, EffectFade, Navigation } from "swiper/modules";
-import { SiAwslambda, SiExpress, SiFlutter, SiGraphql, SiMongodb, SiMysql, SiNestjs, SiNodedotjs, SiPostgresql, SiReact, SiTypescript } from "react-icons/si";
+import {
+  SiAwslambda,
+  SiExpress,
+  SiFlutter,
+  SiGraphql,
+  SiMongodb,
+  SiMysql,
+  SiNestjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiReact,
+  SiTypescript,
+} from "react-icons/si";
 
 const slides = [
   {
@@ -56,11 +68,11 @@ const slides = [
     description:
       "This type of software allows users to schedule, manage, and coordinate appointments, meetings, and events with others, often integrating with calendars and providing features like automated reminders, time zone conversions, and the ability to book appointments based on availability",
     mainImg: [zonely2, zonely1],
-    packages: [SiNodedotjs, SiNestjs,  SiMysql, SiReact],
+    packages: [SiNodedotjs, SiNestjs, SiMysql, SiReact],
   },
   {
     id: 5,
-    title: "Compressor-gun",
+    title: "Sentry Compact",
     subTitle: "Image compression application",
     description:
       "Sentry Compact is an image processing web application built with JavaScript and Tailwind CSS. It allows users to easily compress images to any desired file size, making it a powerful tool for optimizing and managing images. With a simple and intuitive interface, Sentry Compact makes it easy for users to compress images efficiently, saving them time and storage space.",
@@ -80,10 +92,18 @@ const slides = [
     id: 7,
     title: "E-tuition Hub",
     subtitle: "Revolutionizing Education in Africa",
-    description: "E-tuition addresses the challenges of rising education costs and inaccessibility in Africa by connecting students with top educators through a mobile app and website. The platform features interactive tools like a whiteboard, live chat, and real-time feedback, ensuring quality education is accessible to all. Built with a modern tech stack, Bitselah is a step forward in making learning more inclusive and effective.",
+    description:
+      "E-tuition addresses the challenges of rising education costs and inaccessibility in Africa by connecting students with top educators through a mobile app and website. The platform features interactive tools like a whiteboard, live chat, and real-time feedback, ensuring quality education is accessible to all. Built with a modern tech stack, Bitselah is a step forward in making learning more inclusive and effective.",
     mainImg: [eth, eth2, eth3],
-    packages: [SiReact, SiNodedotjs, SiTypescript, SiMysql, SiAwslambda, SiFlutter]
-  }
+    packages: [
+      SiReact,
+      SiNodedotjs,
+      SiTypescript,
+      SiMysql,
+      SiAwslambda,
+      SiFlutter,
+    ],
+  },
 ];
 
 // NestedSwiper component that receives slides as props
@@ -119,11 +139,11 @@ function ProjectsOverview() {
         // spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 8000,
+          delay: 6000,
           disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         }}
-        
-        navigation={true}
+        navigation={false}
         modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
@@ -158,10 +178,8 @@ function ProjectsOverview() {
                   <div className="mx-auto">
                     <div className="grid grid-cols-4 gap-0.5 gap-y-4 md:grid-cols-6 justify-center items-center mx-auto">
                       {slide.packages.map((Icon, index) => (
-                        <div
-                          key={index}
-                        >
-                          <Icon className="w-10 h-10"/>
+                        <div key={index}>
+                          <Icon className="w-10 h-10" />
                         </div>
                       ))}
                     </div>

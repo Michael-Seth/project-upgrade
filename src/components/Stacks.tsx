@@ -13,8 +13,7 @@ function Stacks() {
                   <br />
                 </p>
                 <span className=" md:text-xl text-lg font-normal dark:text-slate-400 tracking-normal">
-                  An in-depth exploration of the technologies, frameworks, and
-                  libraries I am proficient in.
+                A detailed look into the various technologies, frameworks, and libraries I'm skilled in using.
                 </span>
               </div>
             </div>
@@ -30,7 +29,7 @@ function Stacks() {
                     </p>
                   </div>
                   <div className="mt-2 text-base text-gray-500">
-                    I specialize in building secure and efficient backend applications with Node.js (Express.js and Nest.js). Proficient in NoSQL and SQL databases such as MongoDB, PostgreSQL, MySQL.
+                  I work with tools like Node.js, Express, Nest, TypeScript, MySQL, PostgreSQL, and MongoDB. My approach emphasizes writing clean, modular code, and optimizing database queries to improve performance. Additionally, I utilize CI/CD pipelines to ensure smooth deployments and create backends that are both reliable and easy to maintain.
                   </div>
                 </li>
                 <li>
@@ -40,10 +39,7 @@ function Stacks() {
                     </p>
                   </div>
                   <div className="mt-2 text-base text-gray-500">
-                    Skilled in React.js and related technologies, I craft
-                    seamless, user-friendly interfaces with my backend
-                    expertise, delivering a unified user experience in my
-                    applications.
+                  I focus on frontend development using technologies like React, TypeScript, Tailwind CSS, and Next.js. My goal is to create intuitive, responsive user interfaces that deliver a seamless experience across devices. I prioritize clean, maintainable code and optimize performance. I ensure the frontend is not only visually appealing but also efficient and scalable.
                   </div>
                 </li>
               </ul>
