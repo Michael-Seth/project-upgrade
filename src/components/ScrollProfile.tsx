@@ -1,4 +1,3 @@
-import ShimmerButton from "@/external/components/magicui/shimmer-button";
 import { LuExternalLink } from "react-icons/lu";
 
 function ScrollProfile() {

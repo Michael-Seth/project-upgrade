@@ -8,7 +8,6 @@ import stn1 from "../assets/projects/Ship2Naija.png";
 import compressor1 from "../assets/projects/compressor.png";
 //import mainImg from "../assets/Bitselahcover.png";
 import mainImg from "../assets/profileIcon.png";
-import ShimmerButton from "../external/components/magicui/shimmer-button"
 import TypingAnimation from "../external/components/magicui/typing-animation";
 
 function Hero() {
