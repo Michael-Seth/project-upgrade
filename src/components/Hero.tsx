@@ -37,7 +37,6 @@ function Hero() {
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
-                <ShimmerButton className="shadow-2xl">
                   <a
                     href="https://drive.google.com/file/d/15xNxf7_FBKKQ8Q0xRQHCqNinxxhinpvs/view?usp=sharing"
                     target="_blank"
@@ -46,8 +45,6 @@ function Hero() {
                   >
                     Preview CV
                   </a>
-                </ShimmerButton>
-
                 <a
                   href="https://www.linkedin.com/in/michael-osas"
                   target="_blank"
