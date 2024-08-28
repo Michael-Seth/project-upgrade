@@ -39,7 +39,7 @@ function Hero() {
               <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
                 <ShimmerButton className="shadow-2xl">
                   <a
-                    href="https://drive.google.com/file/d/1052hkvkMO1pP3JbjBlGEEPeAeVf8Qbs9/view?usp=sharing"
+                    href="https://drive.google.com/file/d/15xNxf7_FBKKQ8Q0xRQHCqNinxxhinpvs/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                     className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg"
