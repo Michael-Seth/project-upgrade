@@ -40,7 +40,7 @@ function Hero() {
                     href="https://drive.google.com/file/d/15xNxf7_FBKKQ8Q0xRQHCqNinxxhinpvs/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
-                    className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg"
+                    className="items-center justify-center w-full px-6 py-2.5  text-center text-white dark:text-black duration-200 bg-black dark:bg-gray-100 border-2 border-black dark:border-gray-100 rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black dark:hover:border-gray-100 dark:hover:text-gray-100 dark:hover:bg-transparent focus:outline-none lg:w-auto focus-visible:outline-black dark:focus-visible:outline-gray-100 text-sm focus-visible:ring-black dark:focus-visible:ring-gray-100"
                   >
                     Preview CV
                   </a>
