@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import DarkModeToggle from "./DarkmodeToggle";
 
 function Navbar() {
-  const [isElementVisible, setIsElementVisible] = useState(false);
+  const [isElementVisible] = useState(false);
   const [toggleNavbar, setToggleNavbar] = useState(true);
   const toggle = () => {
     setToggleNavbar(!toggleNavbar);
@@ -13,9 +13,6 @@ function Navbar() {
     setToggleNavbar(true);
   };
 
-  const toggleElementVisibility = () => {
-    setIsElementVisible(!isElementVisible);
-  };
 
   return (
     <header className="bg-white dark:bg-gray-950 fixed top-0 w-full z-10">
